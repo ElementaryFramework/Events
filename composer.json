@@ -1,0 +1,25 @@
+{
+  "name": "elementaryframework/events",
+  "description": "Shared project to manage and handle events",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Nana Axel",
+      "email": "ax.lnana@outlook.com"
+    }
+  ],
+  "require": {
+    "php": "^7.1.10"
+  },
+  "keywords": [
+    "stream",
+    "async",
+    "buffer"
+  ],
+  "autoload": {
+    "psr-4": {
+      "ElementaryFramework\\Core\\Events\\": "src/Core/Events/"
+    }
+  }
+}
