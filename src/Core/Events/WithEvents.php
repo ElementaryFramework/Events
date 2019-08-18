@@ -72,8 +72,11 @@ trait WithEvents
      *
      * @return void
      */
-    protected function emit(int $event, ...$params)
+    public function emit(int $event, ...$params)
     {
+        if (!isset($this->_events[$event]))
+            return;
+
         foreach ($this->_events[$event] as $callback) {
             call_user_func_array($callback, $params);
         }
