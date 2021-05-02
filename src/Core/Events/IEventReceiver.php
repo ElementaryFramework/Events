@@ -49,16 +49,5 @@ interface IEventReceiver
      *
      * @return void
      */
-    function on(int $event, callable $callback) : void;
-
-    /**
-     * Emit an event.
-     *
-     * @param integer $event  The event to emit.
-     * @param array   $callbacks The buffer of events callbacks.
-     * @param mixed[] $params The list of parameters to pass to the callback.
-     *
-     * @return void
-     */
-    function emit(int $event, ...$params);
+    function on(int $event, callable $callback): void;
 }
